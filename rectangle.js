@@ -3,8 +3,8 @@ $(function(){
   var $width = $('#width'),
       $height = $('#height'),
       $btnCal = $('#calculate'),
-      $perimenter = $('#perimeter'),
-      $area = $('#erea');
+      $perimeter = $('#perimeter'),
+      $area = $('#area');
   
   /*calc button click event*/
   $btnCal.click(function(){
@@ -13,9 +13,11 @@ $(function(){
         h = Number($height.val());
 
     //calculate
-    var 
+    var p = 2 * ( w + h ),
+        a = w * h;
 
     //output
-    
-  })
-})
+    $perimeter.val(p);
+    $area.val(a);
+  });
+});
