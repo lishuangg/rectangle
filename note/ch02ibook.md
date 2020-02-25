@@ -1,18 +1,25 @@
-# 电子书
+# 自动化构建电子书
 - ebook repo demo
   1. 手动构建电子书
     - gitbook build 就是将md文件转化成html文件
-    - 将生成的 _book 文件转移到其他临时目录下面
-    - 提交到远程仓库分支gh-pages上
-      > - git checkout -b gh-pages
-      > - 将临时目录里面的文件转移回到iBook文件下
-      > - git add .
-      > - git commit -m 'publish ibook'
-      > - git push -u origin gh-pages
   2. 手动发布电子书
-    2.5 增加新的章节
-  3. 引入自动化构建脚本 .travis.yml
+    - 将生成的 _book 文件转移到其他临时目录下面
+      - 提交到远程仓库分支gh-pages上
+        > - git checkout -b gh-pages
+        > - 将临时目录里面的文件转移回到iBook文件下
+        > - git add .
+        > - git commit -m 'publish ibook'
+        > - git push -u origin gh-pages
+    - 增加新的章节
+  3. 引入自动化构建脚本 .travis.yml (切换到master分支下引入 git checkout master)
+    - [travis.yml](../image/travis.png)
   4. 修改 package.json ，并增加 travisCI 环境变量
+    - 生成package.json文件并修改 (npm init -y)
+    - [travis-ci](../image/travis-ci(2).png)
+      - 将test脚本中的"test": "echo \"Error: no test specified\" && exit 1"修改为"test": "echo \"Error: no test specified\" && exit 0"
+      - "author": "" 添加作者名字
+      - "license": "ISC" 修改为 "license": "MIT",
+    - [travis-ci](../image/travis-ci(1).png)
   5. 实现自动化构建
 
 ## 注意
