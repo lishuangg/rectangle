@@ -29,6 +29,8 @@
 
 ![travis-ci](../image/travis-ci(1).png)
 
+![Travis-CI gh-gage 自动部署文章](https://segmentfault.com/a/1190000015274243)
+
 > - 关联travis-ci和github （https://travis-ci.com） ，然后找到电子书的仓库-->more option-->settings-->Environment Variables
 > - 添加 BRANCH GH_REF USER_EMAIL USER_NAME 和 ACC_TOKEN
 > - 找ACC_TOKEN，github-->settings-->Developer settings-->Personal access tokens-->New personal access token-->填写note，选择repo
