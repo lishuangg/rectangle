@@ -1,7 +1,7 @@
 # 自动化构建--HTML 静态代码检查
 
-![grunt-htmlhint插件文档](https://www.npmjs.com/package/grunt-htmlhint)
-![htmlhint规则详解](https://segmentfault.com/a/1190000013276858)
+[grunt-htmlhint插件文档](https://www.npmjs.com/package/grunt-htmlhint)
+[htmlhint规则详解](https://segmentfault.com/a/1190000013276858)
 
 
 1. 在 grunt-demo 仓库添加 htmlhint 分支
@@ -34,8 +34,8 @@
 
 # 自动化构建--CSS 静态代码检查
 
-![grunt-csslint插件文档](https://www.npmjs.com/package/grunt-contrib-csslint)
-![csslint规则详解](https://github.com/CSSLint/csslint/wiki/Rules)
+[grunt-csslint插件文档](https://www.npmjs.com/package/grunt-contrib-csslint)
+[csslint规则详解](https://github.com/CSSLint/csslint/wiki/Rules)
 
 
 1. 在 grunt-demo 仓库添加 csslint 分支
