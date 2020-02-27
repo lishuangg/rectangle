@@ -1,37 +1,39 @@
-# 自动化构建电子书
-- ebook repo demo
-  1. 手动构建电子书
+# 自动化构建--在线电子书
 
-    gitbook build 就是将md文件转化成html文件
+1. 手动构建电子书
+- gitbook build 就是将md文件转化成html文件
 
-  2. 手动发布电子书
-    
-    将生成的 _book 文件转移到其他临时目录下面
+2. 手动发布电子书
+- 将生成的 _book 文件转移到其他临时目录下面
+- 提交到远程仓库分支gh-pages上
+> - git checkout -b gh-pages
+> - 将临时目录里面的文件转移回到iBook文件下
+> - git add .
+> - git commit -m 'publish ibook'
+> - git push -u origin gh-pages
+- 增加新的章节
 
-    提交到远程仓库分支gh-pages上
-      > - git checkout -b gh-pages
-      > - 将临时目录里面的文件转移回到iBook文件下
-      > - git add .
-      > - git commit -m 'publish ibook'
-      > - git push -u origin gh-pages
+3. 引入自动化构建脚本 .travis.yml (切换到master分支下引入 git checkout master)
 
-    增加新的章节
+![travis.yml](../image/travis.png)
 
-  3. 引入自动化构建脚本 .travis.yml (切换到master分支下引入 git checkout master)
+4. 修改 package.json ，并增加 travisCI 环境变量
+- 生成package.json文件并修改 (npm init -y)
 
-    ![travis.yml](../image/travis.png)
+![travis-ci](../image/travis-ci(2).png)
 
-  4. 修改 package.json ，并增加 travisCI 环境变量
+> - npm i -D gitbook-cli
+> - 将test脚本中的"test": "echo \"Error: no test specified\" && exit 1"修改为"test": "echo \"Error: no test specified\" && exit 0"
+> - "author": "" 添加作者名字
+> - "license": "ISC" 修改为 "license": "MIT"
 
-    生成package.json文件并修改 (npm init -y)
+![travis-ci](../image/travis-ci(1).png)
 
-    ![travis-ci](../image/travis-ci(2).png)
-      - 将test脚本中的"test": "echo \"Error: no test specified\" && exit 1"修改为"test": "echo \"Error: no test specified\" && exit 0"
-      - "author": "" 添加作者名字
-      - "license": "ISC" 修改为 "license": "MIT"
+> - 关联travis-ci和github （https://travis-ci.com） ，然后找到电子书的仓库-->more option-->settings-->Environment Variables
+> - 添加 BRANCH GH_REF USER_EMAIL USER_NAME 和 ACC_TOKEN
+> - 找ACC_TOKEN，github-->settings-->Developer settings-->Personal access tokens-->New personal access token-->填写note，选择repo
 
-    ![travis-ci](../image/travis-ci(1).png)
-  5. 实现自动化构建
+5. 实现自动化构建
 
 ## 注意
 - SUMMARY.md 电子书的目录文件即章节导航  （这些大写文件名的文件是具有特殊用途的文件）
