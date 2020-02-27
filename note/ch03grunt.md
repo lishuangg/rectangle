@@ -1,6 +1,6 @@
 # 自动化构建--LESS 预处理
 
-![Grunt](./image/grunt.png)
+![Grunt](../image/grunt.png)
 
 - 全局安装grunt
 
@@ -12,7 +12,7 @@
 
 - 自动化脚本文件 Gruntfile.js
 
-![Gruntfile](./image/gruntfile.png)
+![Gruntfile](../image/gruntfile.png)
 
 > ```jsx
 > module.exports = function (grunt) {
@@ -68,4 +68,4 @@
 
 - 开始自动化构建 grunt
 
-![grunt](./image/rungrunt.png)
+![grunt](../image/rungrunt.png)
