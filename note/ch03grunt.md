@@ -1,6 +1,6 @@
 # 自动化构建--LESS 预处理
 
-[Grunt](./image/grunt.png)
+![Grunt](./image/grunt.png)
 
 - 全局安装grunt
 
@@ -12,7 +12,7 @@
 
 - 自动化脚本文件 Gruntfile.js
 
-[Gruntfile](./image/gruntfile.png)
+![Gruntfile](./image/gruntfile.png)
 
 > ```jsx
 > module.exports = function (grunt) {
@@ -29,7 +29,7 @@
 > //定义自动化清单：grunt调用方法registerTask，第一个参数是自定义清单的名字，第二个参数是个字符串数组，包含的是清单里面每个任务的名称
 >   grunt.registerTask('default', ['less:compile']);
 > };
-> ```jsx
+> ```
 
 - 在grunt库中创建index.html文件和css文件中的layout.less文件
 
@@ -64,8 +64,8 @@
 >   background-color: #333;
 >   color: @yellowish;
 > }
-> ```jsx
+> ```
 
 - 开始自动化构建 grunt
 
-[grunt](./image/rungrunt.png)
+![grunt](./image/rungrunt.png)

@@ -37,7 +37,11 @@
 
 ## 注意
 - SUMMARY.md 电子书的目录文件即章节导航  （这些大写文件名的文件是具有特殊用途的文件）
-- 全局安装 npm i -g gitbook-cli  gitbook --version
+- 全局安装 
+
+    npm i -g gitbook-cli
+    
+    gitbook --version
 
     gitbook build 构建电子书（build就是将md文件转化为HTML文件）
 
