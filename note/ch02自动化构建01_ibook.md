@@ -1,3 +1,13 @@
+# 自动化构建
+
+### 参考资料
+
+- [持续集成](https://baike.baidu.com/item/%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90/6250744)
+- [grunt官网](https://www.gruntjs.net/)
+- [travis-ci](https://travis-ci.org/)
+- [GTmetrix](https://gtmetrix.com/)
+- [持续集成服务 Travis CI 教程](http://www.ruanyifeng.com/blog/2017/12/travis_ci_tutorial.html)
+
 # 自动化构建--在线电子书
 
 1. 手动构建电子书
@@ -29,7 +39,7 @@
 
 ![travis-ci](../image/travis-ci(1).png)
 
-![Travis-CI gh-gage 自动部署文章](https://segmentfault.com/a/1190000015274243)
+[Travis-CI gh-gage 自动部署文章](https://segmentfault.com/a/1190000015274243)
 
 > - 关联travis-ci和github （https://travis-ci.com） ，然后找到电子书的仓库-->more option-->settings-->Environment Variables
 > - 添加 BRANCH GH_REF USER_EMAIL USER_NAME 和 ACC_TOKEN
